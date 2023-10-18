@@ -21,15 +21,15 @@ email_input = browser.find_element(By.ID,'session_key')
 senha_input = browser.find_element(By.ID, 'session_password')
 login_button = browser.find_element(By.XPATH,'//*[@id="main-content"]/section[1]/div/div/form/div[2]/button')
 
-email_input.send_keys('eduardomarques.dev@gmail.com')
-senha_input.send_keys('02103491157985623ae.')
+email_input.send_keys('')
+senha_input.send_keys('')
 login_button.click()
 
 browser.implicitly_wait(300)
 
 #Pesquisando por "programador"
 input_pesquisar = browser.find_element(By.CLASS_NAME, 'search-global-typeahead__input')
-input_pesquisar.send_keys('programador php')
+input_pesquisar.send_keys('programador java')
 input_pesquisar.send_keys(Keys.ENTER)
 time.sleep(5)
 
